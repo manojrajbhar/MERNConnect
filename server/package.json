@@ -1,14 +1,14 @@
 {
   "name": "mern-stack-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "MERN APP",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
+    "dev": "nodemon index.js"
   },
-  "author": "",
+  "author": "Manoj Rajbhar",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
