@@ -1,5 +1,5 @@
 {
-  "name": "mern-stack-client",
+  "name": "MERNConnect",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://mernconnect-backend.onrender.com",
