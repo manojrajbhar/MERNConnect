@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { Avatar, Button, Paper, Grid, Typography, Container } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import { GoogleLogin } from 'react-google-login';
+import { gapi } from 'gapi-script';
+
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
 import Icon from './icon';
@@ -23,6 +25,16 @@ const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const handleShowPassword = () => setShowPassword(!showPassword);
 
+
+  gapi.load("client:auth2", () => {
+    gapi.client.init({
+      clientId:
+        "77315965013-b440n86854tq8tvr3ono9m3pan75uhjh.apps.googleusercontent.com",
+        scope: 'email',
+      plugin_name: "chat",
+    });
+  });
+
   const switchMode = () => {
     setForm(initialState);
     setIsSignup((prevIsSignup) => !prevIsSignup);
@@ -42,6 +54,7 @@ const SignUp = () => {
   const googleSuccess = async (res) => {
     const result = res?.profileObj;
     const token = res?.tokenId;
+    console.log("hello",result);
 
     try {
       dispatch({ type: AUTH, data: { result, token } });
