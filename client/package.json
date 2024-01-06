@@ -1,6 +1,6 @@
 
 {
-  "name": "mern",
+  "name": "mern_connect",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://mernconnect-backend.onrender.com/",
