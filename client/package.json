@@ -2,7 +2,7 @@
   "name": "mern_connect",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4001",
+  "proxy": "https://mernconnect-backend.onrender.com",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
