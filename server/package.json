@@ -1,12 +1,20 @@
 {
   "name": "mern-stack-api",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "mern app",
+=======
+  "description": "MERN APP",
+>>>>>>> c1cff4aefa77404914966f5aadb290d327c3563c
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
+<<<<<<< HEAD
     "dev":"nodemon index.js"
+=======
+    "dev": "nodemon index.js"
+>>>>>>> c1cff4aefa77404914966f5aadb290d327c3563c
   },
   "author": "Manoj Rajbhar",
   "license": "ISC",
